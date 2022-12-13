@@ -16,9 +16,17 @@ namespace StringCheckLibrary
         public static List<char> GetLetters(string textString)
         {
             List<char> list = new List<char>();
+            textString = textString.ToUpper();
+
             foreach(char c in textString)
-            {
-                list.Add(c);
+            {// проверка на уникальность символа    
+                if(list.Contains(c))
+                {
+                    
+                    list.Add(c);
+
+                }
+                
             }
             return(list);
         }
