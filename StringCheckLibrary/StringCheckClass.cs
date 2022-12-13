@@ -16,7 +16,12 @@ namespace StringCheckLibrary
         public static List<char> GetLetters(string textString)
         {
             List<char> list = new List<char>();
+            foreach(char c in textString)
+            {
+                list.Add(c);
+            }
             return(list);
         }
+
     }
 }
