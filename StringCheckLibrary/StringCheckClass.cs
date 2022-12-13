@@ -22,7 +22,7 @@ namespace StringCheckLibrary
             
             foreach(char c in textString)
             {// проверка на уникальность символа    
-                if(list.Contains(c))
+                if(!list.Contains(c))
                 {
                     
                     list.Add(c);
